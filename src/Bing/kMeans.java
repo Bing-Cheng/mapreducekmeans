@@ -98,6 +98,7 @@ public class kMeans {
 	}
 
 	public static void main(String[] args) throws Exception {
+		 Process process = Runtime.getRuntime().exec("rm -rf /home/cloudera/workspace/training/dataoutput");
 		center = new double[NCLUSTER][DIMENSION];
 		precenter = new double[NCLUSTER][DIMENSION];
 		String inputfile = "file:///home/cloudera/workspace/training/datasource/kmean";
